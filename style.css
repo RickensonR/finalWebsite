@@ -1,0 +1,207 @@
+body {
+	background-image: url(heat4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#bigpic {
+	display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+}
+
+#bigpic2 {
+	display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+}
+
+ #datboiray {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+height: auto;
+}
+
+#winner1{
+  width: 100%;
+  height: 100%;
+}
+
+#winner2{
+  width: 100%;
+  height: 100%;
+}
+
+#datboiburnie{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.header{
+    background-color: pink;
+		text-align: center;
+		border: 5px solid lightblue;
+    color: white;
+
+}
+
+.navBar{
+	background-color: white;
+	border: 5px solid lightblue;
+	overflow: hidden;
+
+
+}
+
+.navBar a:hover {
+	background-color: lightblue;
+  color: pink;
+
+}
+
+.Team-1 {
+	background-color: 	pink;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	float: left;
+
+}
+
+.Team-1:hover {
+	background-color: lightblue;
+	color: pink;
+
+
+}
+
+.Team-2 {
+	background-color: 	pink;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	float: right;
+
+}
+
+.Team-2:hover {
+	background-color: lightblue;
+	color: pink;
+
+
+}
+
+.buttons {
+	position: relative
+	display: inline-block;
+}
+
+
+
+.buttons-content {
+  display: none;
+  position:absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.buttons1 {
+	position: relative
+	display: inline-block;
+	float:right;
+}
+
+
+
+.buttons1-content {
+  display: none;
+  position:absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.buttons-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.buttons-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.buttons:hover .buttons-content {display:block;}
+
+/* Links inside the dropdown */
+.buttons1-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.buttons1-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.buttons1:hover .buttons1-content {display:block;}
+
+.left{
+	width: 40%;
+	height:300px;
+	float:left;
+	border: 10px solid pink;
+	background-color: lightblue;
+}
+
+.play {
+	background-color: 	white;
+	color: lightblue;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	align-self: center;
+	width:185px;
+
+}
+
+.right{
+	width: 40%;
+	height:300px;
+	float:right;
+	border: 10px solid pink;
+	background-color: lightblue;
+}
+
+
+
+.column {
+
+  float: left;
+}
+
+.column.side {
+	background-color: black;
+  width:12.5%;
+	color:white;
+	height: 600px;
+}
+
+.column.middle {
+  width:75%;
+}

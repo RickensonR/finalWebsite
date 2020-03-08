@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href = "style.css"/>
+  <title> notRiggedAtAtll </title>
+
+  <script type="text/javascript">
+
+/* The picture() function  sets each of the two designated boxes to the picture of each conference's representative. It takes in the teamname
+and a number. The teamname parameter refers to the name of the team and the conf paraemeter is meant to disinguish between the two conferences
+ (i.e. 1 represents the west and anythin else represents the east).  */
+         function picture(teamname, conf){
+
+           if (teamname == 'Lakers'){
+             var pic = document.getElementById("Lakers").getAttribute("src");
+
+           }else if (teamname == 'Clippers') {
+             var pic = document.getElementById("Clippers").getAttribute("src");
+
+
+           }else if (teamname == 'Nuggets') {
+             var pic = document.getElementById("Nuggets").getAttribute("src");
+
+
+           }else if (teamname == 'Jazz') {
+             var pic = document.getElementById("Jazz").getAttribute("src");
+
+
+           }else if (teamname == 'Rockets') {
+             var pic = document.getElementById("Rockets").getAttribute("src");
+
+
+
+           }else if (teamname == 'Thunder') {
+             var pic = document.getElementById("Thunder").getAttribute("src");
+
+
+           }else if (teamname == 'Mavericks') {
+             var pic = document.getElementById("Mavericks").getAttribute("src");
+
+
+           }else if (teamname == 'Grizzlies') {
+             var pic = document.getElementById("Grizzlies").getAttribute("src");
+
+
+           }else if (teamname == 'Bucks') {
+             var pic = document.getElementById("Bucks").getAttribute("src");
+
+           }else if (teamname == 'Raptors') {
+             var pic = document.getElementById("Raptors").getAttribute("src");
+
+           }else if (teamname == 'Celtics') {
+             var pic = document.getElementById("Celtics").getAttribute("src");
+
+           }else if (teamname == 'Heat') {
+             var pic = document.getElementById("Heat").getAttribute("src");
+
+           }else if (teamname == '76ers') {
+             var pic = document.getElementById("76ers").getAttribute("src");
+
+           }else if (teamname == 'Pacers') {
+             var pic = document.getElementById("Pacers").getAttribute("src");
+
+           }else if (teamname == 'Nets') {
+             var pic = document.getElementById("Nets").getAttribute("src");
+
+           }else if (teamname == 'Magic') {
+             var pic = document.getElementById("Magic").getAttribute("src");
+
+           }
+
+           /*bigpic and bigpic2 represent the pictures for the west and east conferences. Everytime a new picture is chosen, the old one gets replaced*/
+
+        if (conf == 1){
+           document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+           document.getElementById('bigpic').style.display='block';
+         }else {
+           document.getElementById('bigpic2').src = pic.replace('90x90', '225x225');
+           document.getElementById('bigpic2').style.display='block';
+           document.getElementById('datboiburnie').style.display='none';
+         }
+
+         document.getElementById('winner1').style.display='none';
+         document.getElementById('winner2').style.display='none';
+         document.getElementById('datboiburnie').style.display='none';
+         }
+
+         /* The winners() function replaces the east and west pictures with a gif of ray allen
+         being ray allen as well as a gif of the heat macot, burnie, millie rocking*/
+
+         function winners(){
+           var pic = document.getElementById("datboiray").getAttribute("src");
+           document.getElementById('winner1').src = pic.replace('90x90', '225x225');
+           document.getElementById('winner1').style.display='block';
+           document.getElementById('bigpic').style.display='none';
+           document.getElementById('winner2').src = pic.replace('90x90', '225x225');
+           document.getElementById('winner2').style.display='block';
+           document.getElementById('bigpic2').style.display='none';
+           document.getElementById('datboiburnie').style.display='block';
+
+         }
+
+
+     </script>
+</head>
+
+<body>
+
+<!-- Declartions of all the pictures associated with the website (teams and gifs) -->
+  <img src="Lakers.png" id="Lakers" style="display:none">
+  <img src="Clippers.png" id="Clippers" style="display:none">
+  <img src="Nuggets.png" id="Nuggets" style="display:none">
+  <img src="Jazz.png" id="Jazz" style="display:none">
+  <img src="Rockets.png" id="Rockets" style="display:none">
+  <img src="Thunder.png" id="Thunder" style="display:none">
+  <img src="Mavericks.png" id="Mavericks" style="display:none">
+  <img src="Grizzlies.png" id="Grizzlies" style="display:none">
+  <img src="Bucks.png" id="Bucks" style="display:none">
+  <img src="Raptors.png" id="Raptors" style="display:none">
+  <img src="Celtics.png" id="Celtics" style="display:none">
+  <img src="Heat.png" id="Heat" style="display:none">
+  <img src="Pacers.png" id="Pacers" style="display:none">
+  <img src="76ers.png" id="76ers" style="display:none">
+  <img src="Nets.png" id="Nets" style="display:none">
+  <img src="Magic.png" id="Magic" style="display:none">
+  <img src="datboiray.gif" id="datboiray" style="display:none">
+  <img src="datboiburnie.gif" id="datboiburnie" style="display:none">
+
+<!-- Header at the very top of the website -->
+<div class ="header">
+        <h1 align="center"> COMPLETELY FAIR FINALS SIMULATOR </h1>
+</div>
+
+<!-- A navigation bar that holds clickable buttons  -->
+<div class = "navBar">
+
+<!-- refers to the first button in the navigation bar, which is linked to the dropdown menu that holds the teams of the western conference.
+The picture() function is run whem this button is clicked -->
+  <div class = "buttons">
+    <button class="Team-1">WEST</button>
+      <div class ="buttons-content">
+        <a onclick="picture('Lakers', 1)"href="#">Lakers</a>
+        <a onclick="picture('Clippers',1)"href="#">Clippers</a>
+        <a onclick="picture('Nuggets',1)"href="#">Nuggets</a>
+        <a onclick="picture('Rockets',1)"href="#">Rockets</a>
+        <a onclick="picture('Jazz',1)"href="#">Jazz</a>
+        <a onclick="picture('Thunder',1)"href="#">Thunder</a>
+        <a onclick="picture('Mavericks',1)"href="#">Mavericks</a>
+        <a onclick="picture('Grizzlies',1)"href="#">Grizzlies</a>
+</div>
+    </div>
+
+
+    <!-- refers to the second button in the navigation bar, which is linked to the dropdown menu that holds the teams of the eastern conference.
+    The picture() function is run whem this button is clicked -->
+    <div class = "buttons1">
+      <button class="Team-2">EAST</button>
+        <div class ="buttons1-content">
+          <a onclick = "picture('Bucks', 2)" href="#">Bucks</a>
+          <a onclick = "picture('Raptors', 2)" href="#">Raptors</a>
+          <a onclick = "picture('Celtics', 2)" href="#">Celtics</a>
+          <a onclick = "picture('Heat', 2)" href="#">Heat</a>
+          <a onclick = "picture('76ers', 2)" href="#">76ers</a>
+          <a onclick = "picture('Pacers', 2)" href="#">Pacers</a>
+          <a onclick = "picture('Nets', 2)" href="#">Nets</a>
+          <a onclick = "picture('Magic', 2)" href="#">Magic</a>
+  </div>
+</div>
+
+</div>
+
+<!-- A container for the three columns that hold the website's content -->
+<div class="row">
+
+  <!-- The leftmost column; holds general info about the miami heat -->
+  <div class="column side">
+    <h2>About</h2>
+    <p>The Miami Heat are an American professional basketball team based in Miami. The Heat compete in the National Basketball Association (NBA)
+       as a member of the league's Eastern Conference Southeast Division. The Heat play their home games at American Airlines Arena, and have won
+        three NBA championships. The franchise began play in the 1988–89 NBA season as an expansion team. After a period of mediocrity, the Heat would gain relevance during the 1990s following the appointment of former head coach Pat Riley in the role of team president. Riley would construct the high-profile trades of Alonzo Mourning in 1995, and of Tim Hardaway in 1996, which immediately propelled the team into playoff contention. Mourning and Hardaway would eventually lead the Heat to four division titles, prior to their departures in 2001 and 2002, respectively.</p>
+  </div>
+
+    <!-- The middle column; holds boxes that in turn hold the pictures -->
+
+  <div class="column middle">
+
+    <!-- line breaks for formatting purposes -->
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- declaration of gif that takes over much of the screen when the simulator is run. Initialized to being -->
+    <img id="datboiburnie" src="datboiburnie" style="display:none;" />
+
+    <!-- the right box that holds pictures associated with teams of the east. bigpic2 and winner2 refer to the pictures of the eastern temas and
+  the ray allen gif, respectively  -->
+    <div class = "right">
+        <img id="bigpic2" src="bigpic2" style="display:none;" />
+        <img id="winner2" src="winner2" style="display:none;" />
+
+    </div>
+
+    <!--Runs the winners() function defined above when the play game button is clicked  -->
+    <button onclick="winners()"class = "play"> Play Game </button>
+
+    <!-- the left box that holds pictures associated with teams of the east. bigpic and winner1 refer to the pictures of the western temas and
+  the ray allen gif, respectively  -->
+    <div class = "left">
+        <img id="bigpic" src="bigpic" style="display:none;" />
+        <img id="winner1" src="winner1" style="display:none;" />
+    </div>
+  </div>
+
+  <!-- The rightmost column; holds general info about the miami heat -->
+  <div class="column side">
+    <h2>About</h2>
+    <p>As a result, the team struggled, and entered into a rebuild in time for the 2002–03 season.
+
+      Led by Dwyane Wade, and following a trade for former NBA Most Valuable Player (MVP) Shaquille O'Neal, Miami advanced to play in the NBA Finals in 2006, where they clinched their first championship, led by Riley as head coach. After the departure of O'Neal two years later, the team entered into another period of decline for the remainder of the 2000s. This saw the resignation of Riley as head coach, who returned to his position as team president, and was replaced by Erik Spoelstra.
+
+      In 2010, after creating significant cap space, the Heat partnered Wade with former league MVP LeBron James, and perennial NBA All-Star Chris Bosh, creating the "Big Three" .</p>
+  </div>
+
+</div>
+
+
+    </body>
+</html>
